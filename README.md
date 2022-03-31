@@ -1,27 +1,48 @@
-# RickyMortyJujutv
+# [Rick & Morty App](https://powerful-garden-96737.herokuapp.com/)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
+Rick & Morty App, es una aplicación Web que le permite al usuario ver todo un catalogo de los personajes de la famosa serie Rick & Morty.
+Dando click sobre la imagen del personaje y/o sobre su localización, podras observar información mas detallada sobre el personaje.
 
-## Development server
+* Catalogo de personajes.
+* Catologo paginado.
+* Ver detalle sobre su ultima ubicación.
+* Ver información más detallada del personaje al clickear sobre este.
+* Diseño responsive
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Construido con 🛠️
 
-## Code scaffolding
+* [Node: 16.14.0](https://nodejs.org/en/)
+* [Angular CLI: 13.3.0](https://angular.io)
+* [API Rick & Morty](https://rickandmortyapi.com/documentation/)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Pre-requisitos 📋
 
-## Build
+Para poner en marcha el proyecto debemos tener instalado.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```
+NodeJS
+Angular
+```
 
-## Running unit tests
+### Instalación 🔧
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Luego de descargar el código fuente. 
+Debemos construir y instalar las dependencias del proyecto.
 
-## Running end-to-end tests
+Para instalar las dependencias y ejecutar la aplicacion mediante linea de comando usamos los siguientes comandos (desde la raiz del proyecto)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```
+npm install
+ng serve -o 
+```
 
-## Further help
+El puerto correspondiente en el cual será ejecutada la aplicacion es el siguiente.
+```
+App : http://localhost:4200
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Pruebas Unitarias
+
+Ejecuté `ng test` para ejecutar las pruebas unitarias a través de [Karma](https://karma-runner.github.io).
+
+* **Andrés Villazon** - [acvillazon](https://github.com/acvillazon)
