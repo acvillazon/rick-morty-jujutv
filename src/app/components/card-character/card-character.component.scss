@@ -1,0 +1,97 @@
+@use "/src/styles.scss" as *;
+$border-radius:8px;
+.character-container{
+    display: flex;
+    height: 160px;
+    // background-color: #d8bcb5;
+    border-radius: $border-radius;
+    user-select: none;
+    box-shadow: 0px 4px 9px 0px rgb(0 0 0 / 30%);
+    transition: all 0.2s ease;
+    border: 1px solid $brown;
+
+    &:hover{
+        transform: translate(0, -5px);
+        box-shadow: 0px 6px 20px -6px rgb(0 0 0 / 75%);
+    }
+
+    .character-image{
+        background-image: url(/assets/images/pallete.png);
+        flex: 1;
+        background-size: cover;
+        border-radius: $border-radius;
+        cursor: pointer;
+        
+        img{
+            border-radius: $border-radius;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .character-information{
+        flex: 2;
+        padding: 15px;
+        box-sizing: border-box;
+        font-size: 0.9em;
+        margin: 0;
+
+        p{
+            margin: 0;
+            margin-bottom: 2px;
+            span{
+                color: $brown;
+                font-weight: 500;
+            }
+        }
+
+        h3{
+            margin: 0;
+            margin-bottom: 5px;
+            color:$brown;
+            font-weight: 600;
+        }
+
+        .link-option{
+            cursor: pointer;
+            text-decoration: underline;
+
+            &:hover{
+                color:red;
+                font-weight: 500;
+            }
+        }
+    }
+
+    //Size .xs
+    @media screen and (max-width: map-get($sizes-max, "sm")) {
+        height: auto;
+
+        .character-information{
+            p{
+                font-size: 1.5em;
+                line-height: 1.5em;
+            }
+            h3{
+                font-size: 1.8em;
+                line-height: 1.5em;
+            }
+        }
+    }
+
+    @media screen and (max-width: map-get($sizes-max, "xs")) {
+        height: auto;
+
+        .character-information{
+            p{
+                font-size: 1.2em;
+                line-height: 1.5em;
+            }
+            h3{
+                font-size: 1.5em;
+                line-height: 1.5em;
+            }
+        }
+    }
+}

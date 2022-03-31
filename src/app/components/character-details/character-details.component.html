@@ -1,0 +1,19 @@
+<div class="img-container" [ngStyle]="{'background-image': character.image?'url('+character.image+')':null}" ></div>
+<div class="head-character">
+    <h2>CHARACTER</h2>
+    <h1>{{character.name}}</h1>
+</div>
+<div class="body-character">
+    <h2>Status</h2>
+    <p>{{character?.status}}</p>
+    <h2>Species</h2>
+    <p>{{character?.species}}</p>
+    <h2>Type</h2>
+    <p>{{character?.type}}</p>
+    <h2>Gender</h2>
+    <p>{{character?.gender}}</p>
+    <h2>Origin</h2>
+    <p>{{character?.origin.name}}</p>
+    <h2>Location</h2>
+    <p>{{character?.location.name}}</p>
+</div>

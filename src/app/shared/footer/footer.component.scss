@@ -1,0 +1,16 @@
+@use "/src/styles.scss" as *;
+.footer-container{
+    height:30px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:$brown;
+
+    p{
+        color:white;
+        margin: 0;
+        font-size: 0.8em;
+        font-weight: 500;
+    }
+}

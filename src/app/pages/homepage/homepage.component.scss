@@ -1,0 +1,52 @@
+@use "/src/styles.scss" as *;
+.page-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+.container-preloader-home {
+  @include loading;
+  border-radius: 0;
+}
+
+.page-homepage-body {
+  flex: 1;
+  padding: 0 $space_between;
+  margin-top: 20px;
+
+  .container-character {
+    // flex-wrap: wrap;
+    gap: 10px;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    margin-bottom: 15px;
+
+    app-card-character {
+      flex: 1;
+    }
+    
+    //Size .xs
+    @media screen and (max-width: map-get($sizes-max, "sm")) {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      
+    }
+  }
+
+}
+
+mat-paginator {
+  margin-bottom: 15px;
+  background-color: $brown !important;
+  border-radius: 9px;
+  // color: #000 !important;
+  .mat-paginator-container{
+    min-height: 40px !important;
+  }
+  .mat-icon-button {
+    background: transparent;
+  }
+}

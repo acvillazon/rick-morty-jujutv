@@ -1,0 +1,15 @@
+<div class="character-container" *ngIf="character">
+    <div class="character-image">
+        <img (click)="getCharacter()" [src]="character?.image">
+    </div>
+    <div class="character-information">
+        <h3>{{character?.name}} ({{character?.status}})</h3>
+        <p><span>Gender: </span>{{character?.gender}}</p>
+        <p><span>Species: </span>{{character?.species}}</p>
+        <p class="link-option" (click)="getLocation()"><span>Location: </span>{{character?.location.name}}</p>
+        <p><span>First appearance: </span><span *ngIf="character?.firstAppearance;else noEpisode">{{character.firstAppearance}}</span></p>
+    </div>
+</div>
+<ng-template #noEpisode>
+    <span>Waiting...</span>
+</ng-template>

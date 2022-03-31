@@ -1,0 +1,21 @@
+@use "/src/styles.scss" as *;
+$border-text-shadow:#97ce4c;
+$title-color:#69C8ECFF;
+.navbar-container{
+    padding: 0 $space_between;
+    background-color: $brown;
+    height:60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+
+    h2{
+        margin: 0;
+        font-size: 2em;
+        font-family: "Get Schwifty";
+        color: $title-color;
+        text-shadow: 1px 0 2px $border-text-shadow, -1px 0 0 $border-text-shadow, 0 1px 0 $border-text-shadow, 0 -1px 0 $border-text-shadow, 0px 0px $border-text-shadow, 0px 0px 0 $border-text-shadow, 0px 0px 0 $border-text-shadow, 0px 0px 0 $border-text-shadow;
+
+    }
+}
