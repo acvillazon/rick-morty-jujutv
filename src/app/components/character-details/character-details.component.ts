@@ -12,7 +12,6 @@ export class CharacterDetailsComponent implements OnInit {
   public character:Character={};
   constructor(public dialogRef: MatDialogRef<CharacterDetailsComponent>,
     @Inject(MAT_DIALOG_DATA) public character$: any) {
-      console.log("char",location);
       this.character=character$;
     }
 

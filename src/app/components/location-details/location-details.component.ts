@@ -13,7 +13,6 @@ export class LocationDetailsComponent implements OnInit {
   public location:Location={};
   constructor(public dialogRef: MatDialogRef<LocationDetailsComponent>,
     @Inject(MAT_DIALOG_DATA) public character: any) {
-      console.log("Location",location);
       this.location=character?.locationDetails
     }
 

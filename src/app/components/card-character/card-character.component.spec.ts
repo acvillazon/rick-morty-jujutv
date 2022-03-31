@@ -250,13 +250,13 @@ describe('CardCharacterComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should return an object with information about the location', () => {
+  it('called the "getLocation" function should return an object with information about the location', () => {
     spyOn(component.rickMorty, 'getByUrl').and.returnValue(of(location));
     component.getLocation();
     expect(component.character.locationDetails).toBe(location);
   });
 
-  it('should return an object with information about the episode', () => {
+  it('called the "getFirstEpisode" function should return an object with information about the first episode', () => {
     spyOn(component.rickMorty, 'getByUrl').and.returnValue(of(episode));
     component.getFirstEpisode();
     expect(component.character.firstAppearance).not.toBe(null);
